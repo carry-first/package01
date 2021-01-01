@@ -16,7 +16,7 @@ public class tt {
         /*
         *ji
         */
-        private int k = 10;
+//        private int k = 10;
         System.out.printf("jio");
         List<String> list = new ArrayList();
         list.add("a");
