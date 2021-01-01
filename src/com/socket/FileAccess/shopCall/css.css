@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+.nav {
+  height: 45px;
+  background-color: #f5f5f5;
+}
+.pointer {
+  cursor: pointer;
+}
+header {
+  height: 125px;
+}
+.shopping {
+  border: 1px solid #cfcfcf;
+  border-top: none;
+}
+.shopping .J-filterBar {
+  height: 35px;
+}
+.shopping .J-filterBar li {
+  float: left;
+}
+.shopping .J-filterBar li strong {
+  display: inline-block;
+  width: 123px;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+.shopping .line {
+  position: relative;
+  height: 2px;
+  background-color: #cfcfcf;
+}
+.shopping .line .curren {
+  position: absolute;
+  width: 123px;
+  height: 100%;
+  left: 0;
+  background-color: red;
+  transition: all 0.7s;
+}
+.shopping .J_carMain .J_carBar {
+  height: 50px;
+}
+.shopping .J_carMain .J_carBar ul li {
+  box-sizing: border-box;
+  float: left;
+  width: 155px;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 50px;
+}
+.shopping .J_carMain .J_carBar ul li input {
+  margin: 0 7px;
+}
+.shopping .J_carMain .J_carBar ul li:nth-child(1) {
+  width: 100px;
+}
+.shopping .J_carMain .J_carBar ul li:nth-child(2) {
+  width: 470px;
+}
+.shopping .J_carMain .J_carcontent .J_item {
+  height: 129px;
+  padding: 17px 15px;
+  box-sizing: border-box;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li {
+  float: left;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(1) {
+  width: 70px;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(2) {
+  width: 250px;
+  vertical-align: top;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(3) {
+  width: 230px;
+  color: #cfcfcf;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(4) {
+  width: 155px;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(5) {
+  width: 155px;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(5) input {
+  width: 40px;
+  text-align: center;
+  outline: none;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(5) a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(6) {
+  width: 155px;
+  color: red;
+}
+.shopping .J_carMain .J_carcontent .J_item .content ul li:nth-child(7) {
+  width: 150px;
+}
+.shopping .J_carMain .J_carfooter {
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  padding: 3px;
+  font-size: 13px;
+  background-color: #e5e5e5;
+}
+.shopping .J_carMain .J_carfooter ul {
+  height: 100%;
+}
+.shopping .J_carMain .J_carfooter ul li {
+  float: left;
+  margin-right: 20px;
+}
+.shopping .J_carMain .J_carfooter ul li input {
+  margin: 0 7px;
+}
+.shopping .J_carMain .J_carfooter ul li:nth-child(5) {
+  margin-left: 540px;
+}
+.shopping .J_carMain .J_carfooter ul li .number,
+.shopping .J_carMain .J_carfooter ul li .totalPrice {
+  display: inline-block;
+  color: red;
+  font-size: 16px;
+  margin: 0 5px;
+}
+.shopping .J_carMain .J_carfooter ul li:nth-child(7) {
+  float: right;
+  width: 140px;
+  height: 100%;
+  margin: 0;
+}
+.shopping .J_carMain .J_carfooter ul li:nth-child(7) a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  background-color: #cfcfcf;
+}
+.current {
+  color: red;
+}
+.checked-item {
+  background-color: #fff8e1;
+}

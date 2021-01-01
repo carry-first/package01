@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="">
+    <title>个人项目展示</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="aride/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="aride/css/index.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            function ScreenWidth() { //获取屏幕尺寸，判断PC端或移动端
+                if (/phone|pad|pod|iPhone|iPod|ios|iPad|Android|Fennec|BlackBerry|Mobile|IEMobile|MQQBrowser|JUC|Fennec|WosBrowser|BrowserNG|WebOS|Symbian|Windows Phone/i.test(navigator.userAgent)) {
+                    //如果是移动端，则跳转到移动端对应的页面；否则，跳转到PC端对应的页面
+                    window.location.href = '携程/index.html';
+                }
+            }
+            ScreenWidth();
+        })
+    </script>
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                            <a class="navbar-brand" href="#">阿里百秀</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">奇·趣事 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">潮·科技</a></li>
+                                <li><a href="#">美·奇迹</a></li>
+                                <li><a href="#">趣·美味</a></li>
+                                <li><a href="#">会·生活</a></li>
+                            </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="搜索">
+                                </div>
+                                <button type="submit" class="btn btn-default">搜索</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">注册</a></li>
+                                <li><a href="#" data-toggle="modal" data-target=".login">登录</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>游戏</li>
+                                        <li><a href="#">Another action</a>视频</li>
+                                        <li><a href="#">Something else here</a>小说</li>
+                                        <li role="separator" class="divider">文字</li>
+                                        <li><a href="#">Separated link</a>可乐</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- 模态框 -->
+                            <div class="modal fade login" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">用户登录</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- 模态框内容表单 -->
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">邮箱地址</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">密码</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputFile">选择文件</label>
+                                                    <input type="file" id="exampleInputFile">
+                                                    <p class="help-block">Example block-level help text here.</p>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                    <input type="checkbox"> 记住用户名
+                                                  </label>
+                                                </div>
+                                                <button type="submit" class="btn btn-default">登录</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- topnav导航栏 -->
+    <div class="hea">
+        <div class="container">
+            <div class="row">
+                <header>
+                    <!-- 顶部logo模块 -->
+                    <a href="#" class="logo col-md-2 col-sm-6 hidden-xs"></a>
+                    <!-- 顶部导航模块 -->
+                    <ul class="col-sm-6 hidden-xs">
+                        <li class="col-sm-2">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-home "></span><span class="text">首页</span></a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-bullhorn"></span><span class="text">奇·趣事</span></a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-phone "></span><span class="text">潮·科技</span></a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-flag "></span><span class="text">美·奇迹</span></a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-tower "></span><span class="text">趣·美味</span></a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-glass "></span><span class="text">会·生活</span></a>
+                        </li>
+
+                    </ul>
+                    <!-- 右侧连接模块 -->
+                    <div class="slink visible-md visible-lg">
+                        <a href="#">留言</a> -
+                        <a href="#">读者排行</a> -
+                        <a href="#">投稿</a> -
+                        <a href="#">点赞墙</a> -
+                        <a href="#">关于</a> -
+                        <a href="#">广告</a> -
+                        <a href="#">团队动态</a> <br>
+                        <a href="#">关注微信</a> -
+                        <a href="#">新浪微博</a> -
+                        <a href="#">腾讯新闻</a>
+                    </div>
+                    <!-- 超小屏下 -->
+                    <a href="" class="log2 visible-xs"></a>
+                    <ul class="ul2 visible-xs">
+                        <li>
+                            <a href="#">首页</a></li>
+                        <li>
+                            <a href="#">奇·趣事</a></li>
+                        <li>
+                            <a href="#">潮·科技</a></li>
+                        <li>
+                            <a href="#">美·奇迹</a></li>
+                        <li>
+                            <a href="#">趣·美味</a></li>
+                        <li>
+                            <a href="#">会·生活</a></li>
+                    </ul>
+                </header>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻模块 -->
+    <div class="news hidden-xs">
+        <div class="container">
+            <div class="row">
+                <!-- 左边图片模块 -->
+                <div class="news-img col-md-9 col-sm-12">
+                    <ul class="row">
+                        <li class="col-sm-6">
+                            <a href="#"><img src="aride/upload/new1.jpg" alt="">
+                                <p>22个中国最美瀑布，你去过哪一个</p>
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="#"><img src="aride/upload/new2.jpg" alt="">
+                                <p>25个世界上最迷人的城堡</p>
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="#"><img src="aride/upload/new3.jpg" alt="">
+                                <p>闪耀的沙雕作品，转瞬即逝却依然经典</p>
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="#"><img src="aride/upload/new4.jpg" alt="">
+                                <p>6大世界上至今无解的自然怪象</p>
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="#"><img src="aride/upload/new5.jpg" alt="">
+                                <p>《变形金刚》那些你不知道的制作幕后</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 右边排名模块 -->
+                <div class="news-roat col-md-3 col-sm-0 hidden-sm hidden-xs">
+                    <p class="hd">热门文章排行</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">1</div><span>神奇的水滴摄影，泡泡中的世界</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">2</div><span>游泳学校教会你如何成为一个美人鱼</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">3</div><span>18个非常有趣的创意勺子，让你大呼可爱</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">4</div><span>23种废旧塑料瓶的二次重生，塑料钱包最具创意</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">5</div><span>随年龄成长的儿童座椅，完美适用6个月至10岁</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">6</div><span>世界首个皮卡丘咖啡店在日本东京开业啦！</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">7</div><span>《变形金刚4》那些你不知道的制作幕后</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">8</div><span>世界上唯一真实存在的地下城，澳大利亚居住在</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="paiming">9</div><span>变废为宝：旧书报变成艺术雕塑</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 评论区 -->
+    <div class="publish">
+        <div class="container">
+            <div class="row">
+                <div class="liuyan col-md-9">
+                    <h4>最新发布<span class="text-muted">24小时发布奇闻趣事：篇     一周更新：篇</span></h4>
+                    <div class="content">
+                        <span class="label label-danger">奇·趣事</span>
+                        <h3>世界第一台可以玩游戏的洗衣机，游戏通关才能洗衣服 </h3>
+                        <p class="text-muted small">发布于 2014-08-08 22:18</p>
+                        <p class="text-warning">随着技术的发展，越来越多的游戏进入人们的生活，也越来越多人喜爱玩游戏。但是，如果把游戏和我们常见的洗衣机结合在一起会产生什么结果呢？估计很多人都难以想象，甚至认为这两个八竿子打不着的东西是不可能结合在一起的。但是事实上，台湾的学生李魏将这</p>
+                    </div>
+                </div>
+                <!-- 排名 -->
+                <div class="search col-md-3">
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">热点</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">排名</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">This is hot</div>
+                            <div role="tabpanel" class="tab-pane" id="profile">排名内容</div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

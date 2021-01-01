@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+        
+        .box {
+            width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            rotate: 1%;
+            padding: 20px 10px;
+            position: relative;
+        }
+        
+        .Tips {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+        }
+        
+        .Tips p {
+            margin: 5px 0;
+        }
+        
+        .Tips p:nth-child(1) {
+            color: rgb(227, 199, 124);
+        }
+        
+        .Tips p:nth-child(2) {
+            color: rgb(167, 170, 168);
+        }
+        
+        .form {
+            width: 50%;
+            margin: 30px auto;
+            color: rgb(167, 170, 168);
+        }
+        
+        .form table tr td:nth-child(1) {
+            margin-right: 20px;
+            text-align: right;
+        }
+        
+        .form table input {
+            margin: 7px 20px;
+            width: 251px;
+            height: 32px;
+            border: 1px solid #a6a6a6;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        
+        .login {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="Tips">
+            <p>新用户注册</p>
+            <p>USER REGISTER</p>
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td><label for="user">用户名</label></td>
+                        <td><input type="text" name="user" id="user" placeholder="请输入账号" onblur="checkUser(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">密码</label></td>
+                        <td><input type="password" name="password" id="password" placeholder="请输入密码"></td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+        <div class="login">
+            <span>未登录<a>立即登录</a></span>
+        </div>
+    </div>
+    <script>
+        console.log(document.forms);
+        console.log(document.scripts);
+
+        var form = document.forms;
+        var form1 = form[0];
+        console.log(form1[0]);
+
+        function checkUser(ele) {
+            var user = document.querySelector('#user');
+            var reg = /^\w{3,}/;
+            var flag = null;
+            if (reg.test(user.value)) {
+                flag = true;
+            } else {
+                flag = false;
+            }
+            console.log(flag);
+        }
+    </script>
+</body>
+
+</html>

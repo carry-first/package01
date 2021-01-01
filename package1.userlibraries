@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="WEB-INF" />
+  <library name="lib">
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/druid-1.0.9.jar" />
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/commons-logging-1.2.jar" />
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/spring-tx-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/spring-core-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/spring-jdbc-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/spring-beans-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/mchange-commons-java-0.2.12.jar" />
+    <archive path="D:/a/package1/webTest01/web/WEB-INF/lib/mysql-connector-java-8.0.21.jar" />
+  </library>
+  <library name="libs">
+    <archive path="D:/a/package1/src/com/JDBC/libs/druid-1.0.9.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/c3p0-0.9.5.2.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/commons-logging-1.2.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-tx-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-core-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-jdbc-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-beans-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/mchange-commons-java-0.2.12.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/mysql-connector-java-8.0.21.jar" />
+  </library>
+  <library name="libs (2)">
+    <archive path="D:/a/package1/src/com/JDBC/libs/druid-1.0.9.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/c3p0-0.9.5.2.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/commons-logging-1.2.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-tx-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-core-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-jdbc-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/spring-beans-5.0.0.RELEASE.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/mchange-commons-java-0.2.12.jar" />
+    <archive path="D:/a/package1/src/com/JDBC/libs/mysql-connector-java-8.0.21.jar" />
+  </library>
+  <library name="mysql-connector-java-8.0" />
+  <library name="servlet-api">
+    <archive path="D:/a/package1/webTest01/META-INF/servlet-api.jar" />
+  </library>
+  <library name="servlet-api (2)">
+    <archive path="D:/java-web/web/servlet-api.jar" />
+  </library>
+</eclipse-userlibraries>
+

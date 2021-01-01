@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="var" path="MAVEN_REPOSITORY/junit/junit/4.12/junit-4.12.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql-connector-java-8.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/libs"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/libs (2)"/>
+	<classpathentry kind="output" path="out/production/package1"/>
+</classpath>
