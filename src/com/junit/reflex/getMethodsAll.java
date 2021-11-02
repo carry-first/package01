@@ -3,7 +3,7 @@ package com.junit.reflex;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class getMethodsAll{
+public class getMethodsAll {
     public static void main(String[] args) throws Exception {
         //        定义类
         Class ps = Person.class;

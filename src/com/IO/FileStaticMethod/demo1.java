@@ -12,9 +12,9 @@ public class demo1 {
 
         File f1 = new File("D:\\test");
 
-        File f2 = new File(f1,"test.txt");
+        File f2 = new File(f1, "test.txt");
 
-        File f3 = new File("D:\\test","test.txt");
+        File f3 = new File("D:\\test", "test.txt");
 
         System.out.println(f1);
         System.out.println(f2);

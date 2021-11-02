@@ -9,11 +9,12 @@ public class mainCook {
             }
         });
 
-        invokeCook(()->{
+        invokeCook(() -> {
             System.out.println("开饭了，吃饭了");
         });
     }
-    public static void invokeCook(Cook cook){
+
+    public static void invokeCook(Cook cook) {
         cook.makeFood();
     }
 }

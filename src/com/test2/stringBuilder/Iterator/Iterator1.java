@@ -15,9 +15,9 @@ public class Iterator1 {
 //        定义迭代器
         Iterator it = ct.iterator();
 //        循环判断是否还有元素
-        while (it.hasNext()){
+        while (it.hasNext()) {
 //            如果有则输出
-            System.out.print(it.next()+"\t");
+            System.out.print(it.next() + "\t");
         }
 
     }

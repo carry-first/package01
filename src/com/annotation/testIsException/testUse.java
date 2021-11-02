@@ -22,18 +22,18 @@ public class testUse {
 //        循环方法，看是否有错误
         for (Method method : methods) {
 //            判断当前方法是否有注解
-            if(method.isAnnotationPresent(testData.class)){
+            if (method.isAnnotationPresent(testData.class)) {
 //                尝试运行当前方法
-                try{
+                try {
                     method.invoke(col);
-                }catch (Exception e){
+                } catch (Exception e) {
 //                    如果该方法运行错误
                     number++;
 //                    写入文件信息
-                    bw.write(method.getName()+"方法出错了");
+                    bw.write(method.getName() + "方法出错了");
                     bw.newLine();
 //                    错误的原因
-                    bw.write("出错的原因："+e.getCause().getMessage());
+                    bw.write("出错的原因：" + e.getCause().getMessage());
                 }
             }
         }

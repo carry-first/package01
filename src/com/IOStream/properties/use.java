@@ -15,7 +15,7 @@ public class use {
         show03();
     }
 
-//    读取文件
+    //    读取文件
     private static void show03() throws IOException {
         Properties prop = new Properties();
 //        读取文件
@@ -25,7 +25,7 @@ public class use {
 //        获取所有key值
         for (String key : strings) {
 //            循环打印读取到的内容
-            System.out.println(key+"="+prop.getProperty(key));
+            System.out.println(key + "=" + prop.getProperty(key));
         }
     }
 
@@ -34,30 +34,30 @@ public class use {
 //        创建properties集合
         Properties prop = new Properties();
 //        添加数据
-        prop.setProperty("赵丽颖","168");
-        prop.setProperty("迪丽热巴","165");
-        prop.setProperty("马儿扎哈","169");
+        prop.setProperty("赵丽颖", "168");
+        prop.setProperty("迪丽热巴", "165");
+        prop.setProperty("马儿扎哈", "169");
 //        创建写入文件流
         FileWriter fw = new FileWriter("src\\com\\IOStream\\properties\\a.txt");
 //        将数据写入到文件中
-        prop.store(fw,"sava Data");
+        prop.store(fw, "sava Data");
 //        关闭流
         fw.close();
     }
 
-//    基本使用
+    //    基本使用
     private static void show01() {
 //        创建properties集合
         Properties prop = new Properties();
 //        添加数据
-        prop.setProperty("赵丽颖","168");
-        prop.setProperty("迪丽热巴","165");
-        prop.setProperty("马儿扎哈","169");
+        prop.setProperty("赵丽颖", "168");
+        prop.setProperty("迪丽热巴", "165");
+        prop.setProperty("马儿扎哈", "169");
 //        获取所有键
         Set<String> strings = prop.stringPropertyNames();
 //        循环遍历并输出获取到的值
         for (String value : strings) {
-            System.out.println(value+"="+prop.getProperty(value));
+            System.out.println(value + "=" + prop.getProperty(value));
         }
     }
 }

@@ -8,23 +8,23 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class GenericMethodTest01 {
-//    定义将传递任何数据的数组转化为List元素的泛型方法
-    public <E> List<E> toList(E [] arr){
+    //    定义将传递任何数据的数组转化为List元素的泛型方法
+    public <E> List<E> toList(E[] arr) {
 //        定义泛型集合
         ArrayList<E> list = new ArrayList<>();
 //        循环遍历数组中的所有元素，将这些元素添加到集合当中
-        for(E e : list){
+        for (E e : list) {
             list.add(e);
         }
 //        返回泛型集合
         return list;
     }
 
-    public void test01(){
+    public void test01() {
         List<String> list = null;
         ArrayList<String> arrlist = new ArrayList();
         LinkedList<String> linke = new LinkedList();
-        AbstractList<String> absL =null;
+        AbstractList<String> absL = null;
 
         list = arrlist;
 //        arrlist = linke;
@@ -32,8 +32,8 @@ public class GenericMethodTest01 {
     }
 
     @Test
-    public void test02(){
-        List <?> list = null;
+    public void test02() {
+        List<?> list = null;
         ArrayList<String> arrlist = new ArrayList<>();
         arrlist.add("sss");
         arrlist.add("gg");
@@ -43,8 +43,9 @@ public class GenericMethodTest01 {
         System.out.println(o);
 //        list.add("kkk");
     }
+
     @Test
-    public void test03(){
+    public void test03() {
         List<? extends Person> list1 = null;
         List<? super Person> list2 = null;
 

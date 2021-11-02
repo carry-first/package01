@@ -1,6 +1,5 @@
 package com.company;
 
-import org.w3c.dom.ls.LSOutput;
 
 public class math1 {
     public static void main(String[] args) {
@@ -13,16 +12,18 @@ public class math1 {
     }
 }
 
-class father{
+class father {
     String name = "父类";
-    public void method(){
+
+    public void method() {
         System.out.println(name);
     }
 }
 
-class son extends father{
+class son extends father {
     String name = "子类";
-    public void method(){
+
+    public void method() {
         System.out.println(name);
         System.out.println(super.name);
     }

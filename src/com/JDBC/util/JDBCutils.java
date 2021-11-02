@@ -21,10 +21,10 @@ public class JDBCutils {
 //            获取类加载器
             ClassLoader classLoader = JDBCutils.class.getClassLoader();
 //            获取类加载中的获取源文件名
-            URL resource = classLoader.getResource("propertiesJDBC.properties");
+            URL resource = classLoader.getResource("druid.properties");
 //            获取文件的路劲
             String path = resource.getPath();
-//            查看文件存在的路劲
+//            查看文件存在的路劲T
 //            System.out.println(path);
 //            加载文件进属性级中
             pro.load(new FileReader(path));
@@ -37,14 +37,16 @@ public class JDBCutils {
             e.printStackTrace();
         }
     }
-//    定义获取数据库连接对象
-    public Connection getConnection() throws SQLException {
+
+    //    定义获取数据库连接对象
+    public static Connection getConnection() throws SQLException {
         Connection coon = null;
         try {
 //            导入驱动
             Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 //        定义获取对象
-            coon = DriverManager.getConnection(url,user,password);
+            coon = DriverManager.getConnection(url, user, password);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -52,10 +54,10 @@ public class JDBCutils {
         return coon;
     }
 
-//    定义关闭Connection和Statement流的方法
-    public void close(Connection coon, Statement stat){
+    //    定义关闭Connection和Statement流的方法
+    public void close(Connection coon, Statement stat) {
 //        关闭数据流
-        if(coon != null){
+        if (coon != null) {
             try {
                 coon.close();
             } catch (SQLException throwables) {
@@ -63,7 +65,7 @@ public class JDBCutils {
             }
         }
 
-        if(stat != null){
+        if (stat != null) {
             try {
                 stat.close();
             } catch (SQLException throwables) {
@@ -72,10 +74,10 @@ public class JDBCutils {
         }
     }
 
-//    定义关闭Connection、Statement、ResultSet流的方法
-    public void close(Connection coon, Statement stat, ResultSet res){
+    //    定义关闭Connection、Statement、ResultSet流的方法
+    public void close(Connection coon, Statement stat, ResultSet res) {
 //        关闭数据流
-        if(coon != null){
+        if (coon != null) {
             try {
                 coon.close();
             } catch (SQLException throwables) {
@@ -83,7 +85,7 @@ public class JDBCutils {
             }
         }
 
-        if(stat != null){
+        if (stat != null) {
             try {
                 stat.close();
             } catch (SQLException throwables) {
@@ -91,7 +93,7 @@ public class JDBCutils {
             }
         }
 
-        if(res != null){
+        if (res != null) {
             try {
                 res.close();
             } catch (SQLException throwables) {

@@ -1,0 +1,6 @@
+POST http://www.yahboom.com/weixinthings/function/json.php
+Content-Type: application/x-www-form-urlencoded
+
+codeid=2&device_id=gh_2c053f7d6811_dc5fc73a23d83d4b
+
+###

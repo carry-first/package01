@@ -7,7 +7,7 @@ public class demo1 {
         ArrayList al = new ArrayList();
         al.add("23");
         al.add(12);
-        Integer num = (int)al.get(1);
+        Integer num = (int) al.get(1);
         System.out.println(num.hashCode());
     }
 }

@@ -6,10 +6,10 @@ import java.util.Comparator;
 
 public class Conpartor {
     public static void main(String[] args) {
-        Person arr [] = {
-        new Person("迪丽热巴",18),
-        new Person("古力娜扎",10),
-        new Person("马儿扎哈",13),};
+        Person arr[] = {
+                new Person("迪丽热巴", 18),
+                new Person("古力娜扎", 10),
+                new Person("马儿扎哈", 13),};
 /*        Arrays.sort(arr, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
@@ -17,7 +17,7 @@ public class Conpartor {
             }
         });*/
 //        箭头函数代替Comparator对象
-        Arrays.sort(arr,(o1,o2)->{
+        Arrays.sort(arr, (o1, o2) -> {
             return o1.getAge() - o2.getAge();
         });
         for (Person person : arr) {
@@ -26,7 +26,7 @@ public class Conpartor {
     }
 }
 
-class Person{
+class Person {
     private String name;
     private int age;
 

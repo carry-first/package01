@@ -27,7 +27,7 @@ public class Person {
         this.age = age;
     }
 
-//    自动生成并重写Object类中的equals方法
+    //    自动生成并重写Object类中的equals方法
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

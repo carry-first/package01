@@ -11,29 +11,31 @@ public class masterClass {
         Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
 //        printpp(n);
-        System.out.println(codivisor(12,8));
+        System.out.println(codivisor(12, 8));
     }
-    public static long codivisor(long x1,long x2){
+
+    public static long codivisor(long x1, long x2) {
         long t = 0;
-        while (x2!=0){
-            t= x1%x2;
-            x1=x2;
-            x2=t;
+        while (x2 != 0) {
+            t = x1 % x2;
+            x1 = x2;
+            x2 = t;
         }
-        
+
         return x1;
     }
-    public static void printpp(int n){
-        int i=0;
-        if(n==0) return;
-        else while (n!=0){
-            if(n>0){
-                System.out.print(n%10);
-            }else{
-                System.out.print(-n%10);
+
+    public static void printpp(int n) {
+        int i = 0;
+        if (n == 0) return;
+        else while (n != 0) {
+            if (n > 0) {
+                System.out.print(n % 10);
+            } else {
+                System.out.print(-n % 10);
             }
             i++;
-            n/=10;
+            n /= 10;
         }
     }
 }

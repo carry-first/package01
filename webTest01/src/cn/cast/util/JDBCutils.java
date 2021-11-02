@@ -28,11 +28,12 @@ public class JDBCutils {
         }
     }
 
-//    获取数据池对象
-    public static DataSource getDataSource(){
+    //    获取数据池对象
+    public static DataSource getDataSource() {
         return ds;
     }
-//    获取连接对象
+
+    //    获取连接对象
     public static Connection getConnection() throws SQLException {
         return ds.getConnection();
     }

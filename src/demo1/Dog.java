@@ -1,6 +1,6 @@
 package demo1;
 
-public abstract class Dog extends Animal{
+public abstract class Dog extends Animal {
 
     @Override
     public void eat() {

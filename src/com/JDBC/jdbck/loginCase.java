@@ -15,14 +15,15 @@ public class loginCase {
         String user = sc.next();
         System.out.println("请输入密码：");
         String passwrod = sc.next();
-        boolean is = new loginCase().login(user,passwrod);
-        if(is){
+        boolean is = new loginCase().login(user, passwrod);
+        if (is) {
             System.out.println("登录成功");
-        }else{
+        } else {
             System.out.println("账号或密码错误");
         }
     }
-    public boolean isSuccess(String user,String password){
+
+    public boolean isSuccess(String user, String password) {
 
         JDBCutils jc = new JDBCutils();
 
@@ -33,8 +34,8 @@ public class loginCase {
         try {
             connection = jc.getConnection();
 
-            String sql = "select * from login where user = '"+user+"' and password = '"+password+"' ";
-            String sql2 = "select * from login where user = '"+user+"' and password='"+password+"or '123'='123'"+"';";
+            String sql = "select * from login where user = '" + user + "' and password = '" + password + "' ";
+            String sql2 = "select * from login where user = '" + user + "' and password='" + password + "or '123'='123'" + "';";
             System.out.println(sql);
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -44,27 +45,27 @@ public class loginCase {
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        }finally {
-            jc.close(connection,statement,resultSet);
+        } finally {
+            jc.close(connection, statement, resultSet);
         }
 //          如果执行出错则返回false；
         return false;
     }
 
-    public boolean login(String username ,String password){
-        if(username == null || password == null){
+    public boolean login(String username, String password) {
+        if (username == null || password == null) {
             return false;
         }
         //连接数据库判断是否登录成功
         Connection conn = null;
-        Statement stmt =  null;
+        Statement stmt = null;
         ResultSet rs = null;
         JDBCutils JDBCUtils = new JDBCutils();
         //1.获取连接
         try {
-            conn =  JDBCUtils.getConnection();
+            conn = JDBCUtils.getConnection();
             //2.定义sql
-            String sql = "select * from user where username = '"+username+"' and password = '"+password+"' ";
+            String sql = "select * from user where username = '" + username + "' and password = '" + password + "' ";
             System.out.println(sql);
             //3.获取执行sql的对象
             stmt = conn.createStatement();
@@ -80,8 +81,8 @@ public class loginCase {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            JDBCUtils.close(conn,stmt,rs);
+        } finally {
+            JDBCUtils.close(conn, stmt, rs);
         }
 
 

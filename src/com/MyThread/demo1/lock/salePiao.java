@@ -18,33 +18,34 @@ public class salePiao {
 
 class MyRunnable1 implements Runnable {
 
-    private int total =100;
-//    定义lock锁
+    private int total = 100;
+    //    定义lock锁
     Lock l = new ReentrantLock();
+
     @Override
     public void run() {
 //        循环售票
-        while (true){
+        while (true) {
 //          获取锁
             l.lock();
 //            如果还有票则继续售票
-                if(total>0){
-                    try {
+            if (total > 0) {
+                try {
 //                        线程睡眠
-                        Thread.sleep(100);
+                    Thread.sleep(100);
 //                打印当前票数
-                        System.out.println(Thread.currentThread().getName()+"---->"+total);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    } finally{
+                    System.out.println(Thread.currentThread().getName() + "---->" + total);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
 //                        无论是否成功执行都会释放锁
-                        l.unlock();
-                    }
-//        让票数减减
-                    total--;
-            }else{
-                    break;
+                    l.unlock();
                 }
+//        让票数减减
+                total--;
+            } else {
+                break;
+            }
         }
     }
 }

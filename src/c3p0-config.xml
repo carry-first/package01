@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <c3p0-config>
-  <default-config>
-    <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
-    <property name="jdbcUrl">jdbc:mysql://localhost:3306/task?useSSL=false&amp;serverTimezone=GMT</property>
-    <property name="user">root</property>
-    <property name="password">123456</property>
-    
-    <property name="initialPoolSize">5</property>
-    <property name="maxPoolSize">8</property>
-    <property name="checkoutTimeout">2000</property>
-  </default-config>
+    <default-config>
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/task?useSSL=false&amp;serverTimezone=GMT</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
 
-  <named-config name="otherc3p0">
-    <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
-    <property name="jdbcUrl">jdbc:mysql://localhost:3306/task?useSSL=false&amp;serverTimezone=GMT</property>
-    <property name="user">root</property>
-    <property name="password">123456</property>
+        <property name="initialPoolSize">5</property>
+        <property name="maxPoolSize">8</property>
+        <property name="checkoutTimeout">2000</property>
+    </default-config>
 
-    <property name="initialPoolSize">5</property>
-    <property name="maxPoolSize">12</property>
-    <property name="checkoutTimeout">4000</property>
-  </named-config>
+    <named-config name="otherc3p0">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/task?useSSL=false&amp;serverTimezone=GMT</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+
+        <property name="initialPoolSize">5</property>
+        <property name="maxPoolSize">12</property>
+        <property name="checkoutTimeout">4000</property>
+    </named-config>
 </c3p0-config>

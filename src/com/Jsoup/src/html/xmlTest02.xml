@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<container>
+    <books>
+        <book id="01">
+            <name>柴可夫斯基</name>
+            <author>霍金</author>
+            <price>12</price>
+        </book>
+        <book id="02">
+            <name>万有引力</name>
+            <author>牛顿</author>
+            <price>12</price>
+            <test><![CDATA[
+            <<jifasdjojfo
+                   ]]></test>
+        </book>
+    </books>
+</container>

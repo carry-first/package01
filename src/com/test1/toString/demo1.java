@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class demo1 {
     public static void main(String[] args) {
-        int a =12;
+        int a = 12;
         Scanner sc = new Scanner(System.in);
         System.out.println(Integer.toString(12));
         System.out.println(sc.toString());
@@ -13,6 +13,7 @@ public class demo1 {
         System.out.println(d.toString());
     }
 }
+
 class demo {
     private String s;
 

@@ -8,7 +8,7 @@ import java.net.Socket;
 public class socektClient {
     public static void main(String[] args) throws IOException {
 //        创建客户端soket对象
-        Socket sk = new Socket("127.0.0.1",8888);
+        Socket sk = new Socket("127.0.0.1", 8888);
 //        获取客户端的输出流
         OutputStream os = sk.getOutputStream();
 //        写入发送的数据
@@ -23,7 +23,7 @@ public class socektClient {
 //        接收到的有效数据
         int len = is.read(bytes);
 //        打印数据
-        System.out.println(new String(bytes,0,len));
+        System.out.println(new String(bytes, 0, len));
 //        关闭流对象
         os.close();
     }

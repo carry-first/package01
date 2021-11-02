@@ -10,7 +10,7 @@ public class runImpl {
 //        调用线程
         t.start();
         for (int i = 0; i < 20; i++) {
-            System.out.println("main:"+i);
+            System.out.println("main:" + i);
         }
     }
 }

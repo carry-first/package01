@@ -1,18 +1,19 @@
 
 /**
- * @since 1.5
  * @author Tang A Biao
  * @version 1.0
+ * @since 1.5
  */
 
 public class annonDemo2 {
     /**
-     * 两数之和
-     * @param a 整数
-     * @param b 整数
-     * @return  返回一个两数之和
+     * 锟斤拷锟斤拷之锟斤拷
+     *
+     * @param a 锟斤拷锟斤拷
+     * @param b 锟斤拷锟斤拷
+     * @return 锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷之锟斤拷
      */
-    public int add(int a,int b){
+    public int add(int a, int b) {
         return a + b;
     }
 }

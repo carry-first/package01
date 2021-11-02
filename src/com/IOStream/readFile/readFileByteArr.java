@@ -14,7 +14,7 @@ public class readFileByteArr {
 //        读入文件
         while ((len = fis.read(bytes)) != -1) {
 //            从0开始读取到有效的字节数
-            System.out.print(new String(bytes,0,len));
+            System.out.print(new String(bytes, 0, len));
         }
 //      关闭流
         fis.close();

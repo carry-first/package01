@@ -12,25 +12,26 @@ public class countShowArgs {
             String temp = "";
             char c = ch[i];
 //            如果再temp找不到字符则表示该字符没有查询过
-            if(temp.indexOf(c)==-1){
-                findArgs(c,s);
+            if (temp.indexOf(c) == -1) {
+                findArgs(c, s);
                 System.out.println(c);
                 System.out.println(temp);
                 System.out.println("执行了");
                 temp += c;
-            }else{
+            } else {
                 continue;
             }
         }
     }
-    public  static void findArgs(char c, String ch){
+
+    public static void findArgs(char c, String ch) {
         int count = 0;
         int index = 0;
-        while (ch.indexOf(c,index)==-1){
+        while (ch.indexOf(c, index) == -1) {
             count++;
-            index = ch.indexOf(c,index);
+            index = ch.indexOf(c, index);
             System.out.println("执行了");
         }
-        System.out.println(c+"出现"+count+"次");
+        System.out.println(c + "出现" + count + "次");
     }
 }

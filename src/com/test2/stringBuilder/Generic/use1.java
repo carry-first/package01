@@ -1,7 +1,7 @@
 package com.test2.stringBuilder.Generic;
 
 //定义泛型，其中e表示泛型，下面的数据类型全部使用e来表示
-public class use1 <e>{
+public class use1<e> {
     private e name;
     private e age;
     private e tite;

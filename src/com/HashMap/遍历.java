@@ -5,6 +5,6 @@ import java.util.Map;
 
 public class 遍历 {
     public static void main(String[] args) {
-        Map<String,String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
     }
 }

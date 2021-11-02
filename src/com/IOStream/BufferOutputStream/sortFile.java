@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.HashMap;
 
 public class sortFile {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         sort();
     }
 
@@ -14,14 +14,14 @@ public class sortFile {
 //        创建字符写入缓冲流
         BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\Tang A Biao\\IdeaProjects\\package1\\src\\com\\IOStream\\BufferOutputStream\\copyIn.txt"));
 //   创建hashmap集合
-        HashMap<String,String> map = new HashMap<>();
-        String line ;
+        HashMap<String, String> map = new HashMap<>();
+        String line;
 //        读取文件
-        while (( line = br.readLine())!=null){
+        while ((line = br.readLine()) != null) {
 //            字符串分割,以。分割，。是转义字符
             String[] split = line.split("\\.");
 //            将内容添加到集合中
-            map.put(split[0],split[1]);
+            map.put(split[0], split[1]);
         }
 //         遍历集合
         for (String s : map.keySet()) {
@@ -29,7 +29,7 @@ public class sortFile {
 //            获取value
             String value = map.get(s);
 //            写入到指定的文件中
-            bw.write(s+"."+value);
+            bw.write(s + "." + value);
 //            换行
             bw.newLine();
         }

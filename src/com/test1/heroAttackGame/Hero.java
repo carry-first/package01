@@ -16,8 +16,8 @@ public class Hero {
         this.weapen = weapen;
     }
 
-    public void attack(){
-        System.out.println(this.name+"使用了"+this.weapen.getCode()+"攻击了别人");
+    public void attack() {
+        System.out.println(this.name + "使用了" + this.weapen.getCode() + "攻击了别人");
     }
 
     public String getName() {

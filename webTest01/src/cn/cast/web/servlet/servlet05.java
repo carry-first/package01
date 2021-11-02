@@ -13,15 +13,15 @@ import java.util.Set;
 public class servlet05 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost(req,resp);
+        this.doPost(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("/demo05------");
 //        设置共享数据
-        req.setAttribute("msg","hello tang");
+        req.setAttribute("msg", "hello tang");
 //        请求转发到demo051
-        req.getRequestDispatcher("/demo051").forward(req,resp);
+        req.getRequestDispatcher("/demo051").forward(req, resp);
     }
 }

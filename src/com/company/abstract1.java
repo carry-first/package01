@@ -6,13 +6,15 @@ public class abstract1 {
         cat1.eat();
     }
 }
+
 //定义抽象类
-abstract class Animal{
+abstract class Animal {
     public abstract void eat();
 }
+
 //实现抽象类
-class cat extends Animal{
-    public void eat(){
+class cat extends Animal {
+    public void eat() {
         System.out.println("猫吃鱼");
     }
 }

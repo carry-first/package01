@@ -22,6 +22,10 @@ public class demoUpper {
         getElement2(objArr);
 
     }
-    public static void getElement1(ArrayList<? extends Number> list){}
-    public static void getElement2(ArrayList<? super Number> list){}
+
+    public static void getElement1(ArrayList<? extends Number> list) {
+    }
+
+    public static void getElement2(ArrayList<? super Number> list) {
+    }
 }

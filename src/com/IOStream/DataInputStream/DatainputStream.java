@@ -1,11 +1,11 @@
 package com.IOStream.DataInputStream;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.io.*;
 
 public class DatainputStream {
-    @Test
+    //    @Test
     public void output() throws IOException {
         DataOutputStream dos = new DataOutputStream(new FileOutputStream("D:\\a\\package1\\src\\com\\IOStream\\DataInputStream\\data.txt"));
         dos.writeUTF("赵六");
@@ -16,7 +16,7 @@ public class DatainputStream {
         dos.close();
     }
 
-    @Test
+    //    @Test
     public void input() throws IOException {
         DataInputStream dis = new DataInputStream(new FileInputStream("D:\\a\\package1\\src\\com\\IOStream\\DataInputStream\\data.txt"));
         String s = dis.readUTF();

@@ -18,10 +18,10 @@ public class demo1 {
     }
 }
 
-class RunnableImpl1 implements Runnable{
+class RunnableImpl1 implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName()+"正在执行");
+        System.out.println(Thread.currentThread().getName() + "正在执行");
     }
 }

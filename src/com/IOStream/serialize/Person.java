@@ -3,10 +3,10 @@ package com.IOStream.serialize;
 import java.io.Serializable;
 
 public class Person implements Serializable {
-//    设置序列化的版本id为2
+    //    设置序列化的版本id为2
     public static final long serialVersionUID = 2L;
     private String name;
-//    private int age;
+    //    private int age;
     public int age;
 
     @Override

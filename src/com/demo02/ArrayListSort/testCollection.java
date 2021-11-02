@@ -26,8 +26,8 @@ public class testCollection {
         arrl.add("dd");
         arrl.add(123);
         arrl.add(true);
-        arrl.add(1,"插入元素");
-        Collections.addAll(arrl,12,534,32,"lkf");
+        arrl.add(1, "插入元素");
+        Collections.addAll(arrl, 12, 534, 32, "lkf");
 //        打乱元素
         Random rm = new Random();
         Collections.shuffle(arrl);

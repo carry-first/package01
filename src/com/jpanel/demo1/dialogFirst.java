@@ -56,7 +56,7 @@ public class dialogFirst extends JDialog {
     public static void main(String[] args) {
         dialogFirst dialog = new dialogFirst();
         dialog.pack();
-        dialog.setBounds(100,100,700,300);
+        dialog.setBounds(100, 100, 700, 300);
         dialog.setVisible(true);
         System.exit(0);
     }

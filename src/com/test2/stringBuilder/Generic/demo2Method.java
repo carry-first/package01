@@ -9,9 +9,10 @@ public class demo2Method {
         d.method(true);
     }
 }
-class demo{
-//    定义泛型方法
-    public <M> void method(M arg){
+
+class demo {
+    //    定义泛型方法
+    public <M> void method(M arg) {
         System.out.println(arg);
     }
 }

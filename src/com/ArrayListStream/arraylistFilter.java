@@ -1,6 +1,7 @@
 package com.ArrayListStream;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class arraylistFilter {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class arraylistFilter {
         list.stream()
 //                开始长度的字符为“张”
                 .filter(name -> name.startsWith("张"))
-                .filter(len -> len.length()>=3)
-                .forEach( item -> System.out.println(item));
+                .filter(len -> len.length() >= 3)
+                .forEach(item -> System.out.println(item));
     }
 }

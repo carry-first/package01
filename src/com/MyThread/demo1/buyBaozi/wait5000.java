@@ -5,12 +5,12 @@ public class wait5000 {
         //        创建锁对象
         Object obj = new Object();
 //        创建客户
-        new Thread(){
+        new Thread() {
             @Override
             public void run() {
-                while (true){
+                while (true) {
                     //                调用同步锁
-                    synchronized (obj){
+                    synchronized (obj) {
                         System.out.println("老板做几个包子");
 //                    无限等待中
                         try {

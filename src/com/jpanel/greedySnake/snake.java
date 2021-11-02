@@ -3,7 +3,7 @@ package com.jpanel.greedySnake;
 import java.util.ArrayList;
 
 public class snake {
-    private int x,y;
+    private int x, y;
 
     int direction = 3;
 

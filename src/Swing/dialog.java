@@ -8,7 +8,8 @@ public class dialog extends JFrame {
     public static void main(String[] args) {
         new dialog();
     }
-    public dialog(){
+
+    public dialog() {
 //        保存this窗格
         JFrame this01 = this;
 //        获取窗格对象
@@ -29,19 +30,19 @@ public class dialog extends JFrame {
         });
 //        设置窗体参数
         setVisible(true);
-        setBounds(100,100,300,210);
+        setBounds(100, 100, 300, 210);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
-    static void Dialog01(JFrame f){
+    static void Dialog01(JFrame f) {
 //        创建dialog对话框
-        JDialog dl = new JDialog(f,"对话框标题",true);
+        JDialog dl = new JDialog(f, "对话框标题", true);
 //        获取对话框窗体
         Container c = dl.getContentPane();
 //        添加窗体内容
         c.add(new JLabel("弹框内容"));
 //        设置窗体规格
-        dl.setSize(100,100);
+        dl.setSize(100, 100);
         dl.setVisible(true);
     }
 

@@ -1,13 +1,13 @@
 package com.test1.bodyClass;
 
- class localDemo {
+class localDemo {
 
-    public void methodLocalDemo(){
+    public void methodLocalDemo() {
         final int num = 12;
 //        局部内部类
-        class inner{
-            public void methodInner(){
-                System.out.println("局部内部类"+num);
+        class inner {
+            public void methodInner() {
+                System.out.println("局部内部类" + num);
             }
         }
 //        方法内定义局部类

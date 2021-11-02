@@ -19,7 +19,7 @@ public class collection1 {
         System.out.println(c1.isEmpty());
         System.out.println(c1);
         for (int i = 0; i < CollectionToArr.length; i++) {
-            System.out.print(CollectionToArr[i]+"\t");
+            System.out.print(CollectionToArr[i] + "\t");
         }
     }
 }

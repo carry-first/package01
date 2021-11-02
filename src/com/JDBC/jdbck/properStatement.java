@@ -12,14 +12,15 @@ public class properStatement {
         String user = sc.next();
         System.out.println("请输入密码：");
         String passwrod = sc.next();
-        boolean is = new properStatement().isSuccess(user,passwrod);
-        if(is){
+        boolean is = new properStatement().isSuccess(user, passwrod);
+        if (is) {
             System.out.println("登录成功");
-        }else{
+        } else {
             System.out.println("账号或密码错误");
         }
     }
-    public boolean isSuccess(String user,String password){
+
+    public boolean isSuccess(String user, String password) {
 
         JDBCutils jc = new JDBCutils();
 
@@ -32,8 +33,8 @@ public class properStatement {
             String sql = "select * from login where user = ? and password = ? ;";
             statement = connection.prepareStatement(sql);
 //          设置？的值
-            statement.setString(1,user);
-            statement.setString(2,password);
+            statement.setString(1, user);
+            statement.setString(2, password);
 //            提交参数查询
             System.out.println(sql);
 //            查询的时候不需要传递参数
@@ -44,32 +45,32 @@ public class properStatement {
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        }finally {
-            jc.close(connection,statement,rs);
+        } finally {
+            jc.close(connection, statement, rs);
         }
 //          如果执行出错则返回false；
         return false;
     }
 
-    public boolean login2(String username ,String password){
-        if(username == null || password == null){
+    public boolean login2(String username, String password) {
+        if (username == null || password == null) {
             return false;
         }
         //连接数据库判断是否登录成功
         Connection conn = null;
-        PreparedStatement pstmt =  null;
+        PreparedStatement pstmt = null;
         ResultSet rs = null;
-        JDBCutils JDBCUtils= new JDBCutils();
+        JDBCutils JDBCUtils = new JDBCutils();
         //1.获取连接
         try {
-            conn =  JDBCUtils.getConnection();
+            conn = JDBCUtils.getConnection();
             //2.定义sql
             String sql = "select * from login where user = ? and password = ?";
             //3.获取执行sql的对象
             pstmt = conn.prepareStatement(sql);
             //给?赋值
-            pstmt.setString(1,username);
-            pstmt.setString(2,password);
+            pstmt.setString(1, username);
+            pstmt.setString(2, password);
             //4.执行查询,不需要传递sql
             rs = pstmt.executeQuery();
             //5.判断
@@ -82,8 +83,8 @@ public class properStatement {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            JDBCUtils.close(conn,pstmt,rs);
+        } finally {
+            JDBCUtils.close(conn, pstmt, rs);
         }
 
 

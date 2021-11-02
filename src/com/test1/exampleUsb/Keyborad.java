@@ -1,6 +1,6 @@
 package com.test1.exampleUsb;
 
-public class Keyborad implements USB{
+public class Keyborad implements USB {
 
     @Override
     public void open() {
@@ -12,7 +12,7 @@ public class Keyborad implements USB{
         System.out.println("关闭键盘");
     }
 
-    public void keyDown(){
+    public void keyDown() {
         System.out.println("键被按下");
     }
 }

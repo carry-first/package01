@@ -24,13 +24,14 @@ public class demonMain {
         totalPerple = sc.nextInt();
 
         ArrayList<Integer> result = new ArrayList<>();
-        result = RandomCompleted(totalMoney,totalPerple);
+        result = RandomCompleted(totalMoney, totalPerple);
         for (int i = 0; i < result.size(); i++) {
             System.out.println(result.get(i));
         }
     }
-//    随机分配红包
-    public static ArrayList<Integer> RandomCompleted(int totalMoney,int totalCount){
+
+    //    随机分配红包
+    public static ArrayList<Integer> RandomCompleted(int totalMoney, int totalCount) {
         ArrayList<Integer> arr = new ArrayList<>();
 
 //        定义数值和人数
@@ -38,7 +39,7 @@ public class demonMain {
         int leftCount = totalCount;
 
 //        随机红包最后一个不需要随机发放
-        for (int i = 0; i < totalCount-1; i++) {
+        for (int i = 0; i < totalCount - 1; i++) {
             Random rm = new Random();
 //            随机金额
             int randomMoney = rm.nextInt(leftMoney - leftCount * 2) + 1;
@@ -54,15 +55,16 @@ public class demonMain {
 
         return arr;
     }
-//    平均分配红包
-    public static ArrayList<Integer> AverageCompleted(int money,int perple){
+
+    //    平均分配红包
+    public static ArrayList<Integer> AverageCompleted(int money, int perple) {
         ArrayList<Integer> arr = new ArrayList();
 //        平均分配
-        for (int i = 0; i < money / perple-1; i++) {
+        for (int i = 0; i < money / perple - 1; i++) {
             arr.add(money / perple);
         }
 //        最后一个余数分配
-        arr.add(money%perple);
+        arr.add(money % perple);
         return arr;
     }
 }

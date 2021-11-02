@@ -11,18 +11,20 @@ public class test1 {
         t2.start();
     }
 }
-class threaad1 implements Runnable{
 
-    private int  num = 100;
+class threaad1 implements Runnable {
+
+    private int num = 100;
     Object obj = new Object();
+
     @Override
     public void run() {
 
-            while(true){
+        while (true) {
 
-                synchronized (obj){
+            synchronized (obj) {
 
-                if(num>0){
+                if (num > 0) {
                     System.out.println(num);
                     try {
                         Thread.sleep(20);
@@ -30,8 +32,8 @@ class threaad1 implements Runnable{
                         e.printStackTrace();
                     }
                     num--;
-                        System.out.println("obj:"+obj);
-                }else break;
+                    System.out.println("obj:" + obj);
+                } else break;
 
             }
 

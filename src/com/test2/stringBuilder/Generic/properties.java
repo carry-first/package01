@@ -9,12 +9,13 @@ public class properties {
     }
 }
 
-class gen01 <e>{
+class gen01<e> {
     e tag;
-    public void method(){
-        if(tag instanceof Integer){
+
+    public void method() {
+        if (tag instanceof Integer) {
             System.out.println("Integer");
-        }else{
+        } else {
             System.out.println("Not Integer");
 
         }

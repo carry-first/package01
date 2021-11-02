@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"<Unnamed>","l":"annonDemo2"},{"l":"所有类","url":"allclasses-index.html"}]
+typeSearchIndex = [{"p": "<Unnamed>", "l": "annonDemo2"}, {"l": "所有类", "url": "allclasses-index.html"}]

@@ -1,6 +1,6 @@
 package com.IOStream.test;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.io.*;
 
@@ -15,32 +15,33 @@ public class copyImg {
             bos = new BufferedOutputStream(new FileOutputStream(targetPath));
 
             int len;
-            byte []str = new byte[1024];
+            byte[] str = new byte[1024];
 
-            while ((len = bis.read(str))!=-1){
+            while ((len = bis.read(str)) != -1) {
 //                加密图片（异或）
-                for(int i=0;i<len;i++){
+                for (int i = 0; i < len; i++) {
                     str[i] = (byte) (str[i] ^ 5);
                 }
 
-                bos.write(str,0,len);
+                bos.write(str, 0, len);
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
-                if(bis!=null) {
+                if (bis != null) {
                     bis.close();
                 }
-                if(bos!=null)
-                bos.close();
+                if (bos != null)
+                    bos.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
-    @Test
-    public void loadEncrytpion(){
+
+    //    @Test
+    public void loadEncrytpion() {
         File f = new File("D:\\a\\package1\\src\\com\\IOStream\\test\\dlamCopyEncrytption.jpg");
         File targetPath = new File("D:\\a\\package1\\src\\com\\IOStream\\test\\loadEncrytpion.jpg");
         BufferedInputStream bis = null;
@@ -49,24 +50,24 @@ public class copyImg {
             bis = new BufferedInputStream(new FileInputStream(f));
             bos = new BufferedOutputStream(new FileOutputStream(targetPath));
             int len;
-            byte []str = new byte[1024];
+            byte[] str = new byte[1024];
 
-            while ((len = bis.read(str))!=-1){
+            while ((len = bis.read(str)) != -1) {
 //                加密图片（异或）
-                for(int i=0;i<len;i++){
+                for (int i = 0; i < len; i++) {
                     str[i] = (byte) (str[i] ^ 5);
                 }
 
-                bos.write(str,0,len);
+                bos.write(str, 0, len);
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
-                if(bis!=null) {
+                if (bis != null) {
                     bis.close();
                 }
-                if(bos!=null)
+                if (bos != null)
                     bos.close();
             } catch (IOException e) {
                 e.printStackTrace();

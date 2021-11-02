@@ -3,7 +3,7 @@ package com.review;
 import java.util.ArrayList;
 import java.util.List;
 
-public class revi01{
+public class revi01 {
     public static void main(String[] args) {
         /*fa f = new zi();
         f.method01();
@@ -32,27 +32,31 @@ public class revi01{
         sb.append(12);
 
     }
-    public void main(String ar){
+
+    public void main(String ar) {
         System.out.println("main");
     }
-    class heart{
+
+    class heart {
         int num = 10;
-        public void method01(){
+
+        public void method01() {
             System.out.println("内部类方法");
         }
     }
 }
 
-class fa{
-    public void method01(){
+class fa {
+    public void method01() {
         System.out.println("父类me01");
     }
-    public void method02(){
+
+    public void method02() {
         System.out.println("me02");
     }
 }
 
-class zi extends fa{
+class zi extends fa {
     @Override
     public void method01() {
         System.out.println("子类方法");
@@ -63,7 +67,7 @@ class zi extends fa{
         super.method01();
     }
 
-    public void play(){
+    public void play() {
         System.out.println("子类特有的方法");
     }
 }

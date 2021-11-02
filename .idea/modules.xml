@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/bootstrap01/bootstrap01.iml" filepath="$PROJECT_DIR$/bootstrap01/bootstrap01.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../java-web/java-web.iml" filepath="$PROJECT_DIR$/../../java-web/java-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/package1.iml" filepath="$PROJECT_DIR$/package1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../java-web/testModule01.iml" filepath="$PROJECT_DIR$/../../java-web/testModule01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../java-web/testModule02.iml" filepath="$PROJECT_DIR$/../../java-web/testModule02.iml" />
       <module fileurl="file://$PROJECT_DIR$/webTest01/webTest01.iml" filepath="$PROJECT_DIR$/webTest01/webTest01.iml" />
     </modules>
   </component>

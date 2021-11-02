@@ -12,8 +12,8 @@ public class demoMainGeneric {
 
 }
 
-class generic01 <T>{
-//    T [] arr01 = new T[12];
-    T [] arr02 = (T[])new Object[12];
+class generic01<T> {
+    //    T [] arr01 = new T[12];
+    T[] arr02 = (T[]) new Object[12];
 
 }

@@ -17,7 +17,7 @@ public class C3P01 {
 //            获取连接对象
                 Connection conn = com.getConnection();
 //            打印
-                System.out.println("第"+i+"个"+conn);
+                System.out.println("第" + i + "个" + conn);
             }
 
             //conn.close();
@@ -26,18 +26,19 @@ public class C3P01 {
         }
         System.out.println("-----------------------");
         try {
-            testC3P0("otherc3p0",15);
+            testC3P0("otherc3p0", 15);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }
-    public static void testC3P0(String name,int n) throws SQLException {
+
+    public static void testC3P0(String name, int n) throws SQLException {
         ComboPooledDataSource cpd = new ComboPooledDataSource(name);
 
 
         for (int i = 0; i < n; i++) {
             Connection conn = cpd.getConnection();
-            System.out.println("第"+i+"个"+conn);
+            System.out.println("第" + i + "个" + conn);
         }
     }
 }

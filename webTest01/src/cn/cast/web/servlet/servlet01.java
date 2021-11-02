@@ -15,13 +15,13 @@ public class servlet01 extends HttpServlet {
 //        获取请求头的全部名称
         Enumeration<String> headerNames = req.getHeaderNames();
 //        循环遍历枚举中是否还有元素
-        while (headerNames.hasMoreElements()){
+        while (headerNames.hasMoreElements()) {
 //            获取当前元素名
             String name = headerNames.nextElement();
 //            获取头部信息
             String header = req.getHeader(name);
 //            输出头部信息
-            System.out.println(name+": "+header);
+            System.out.println(name + ": " + header);
         }
 
     }

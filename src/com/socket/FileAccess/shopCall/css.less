@@ -1,184 +1,228 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-a{
-    color: #000000;
-    text-decoration: none;
-    &:hover{
-        color: red;
-    }
+
+a {
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: red;
+  }
 }
-.w{
-    width: 1200px;
-    margin: 0 auto;
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
 }
-li{
-    list-style: none;
+
+li {
+  list-style: none;
 }
+
 .nav {
-    height: 45px;
-    background-color: rgb(245, 245, 245);
+  height: 45px;
+  background-color: rgb(245, 245, 245);
 }
-.pointer{
-    cursor: pointer;
+
+.pointer {
+  cursor: pointer;
 
 }
+
 header {
-    height: 125px;
+  height: 125px;
 }
-.shopping{
-    border: 1px solid #cfcfcf;
-    border-top: none;
-    .J-filterBar{
-        height: 35px;
-        li{
-            float: left; 
-            strong{
+
+.shopping {
+  border: 1px solid #cfcfcf;
+  border-top: none;
+
+  .J-filterBar {
+    height: 35px;
+
+    li {
+      float: left;
+
+      strong {
+        display: inline-block;
+        width: 123px;
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .line {
+    position: relative;
+    height: 2px;
+    background-color: #cfcfcf;
+
+    .curren {
+      position: absolute;
+      width: 123px;
+      height: 100%;
+      left: 0;
+      background-color: red;
+      transition: all .7s;
+    }
+  }
+
+  .J_carMain {
+    //顶部商品介绍栏
+    .J_carBar {
+      height: 50px;
+
+      ul {
+        li {
+          box-sizing: border-box;
+          float: left;
+          width: 155px;
+          height: 100%;
+          padding: 0 10px;
+          font-size: 13px;
+          line-height: 50px;
+
+          input {
+            margin: 0 7px;
+          }
+
+          &:nth-child(1) {
+            width: 100px;
+          }
+
+          &:nth-child(2) {
+            width: 470px;
+          }
+        }
+      }
+    }
+
+    .J_carcontent {
+      .J_item {
+        height: 129px;
+        padding: 17px 15px;
+        box-sizing: border-box;
+        border-top: 1px solid #cfcfcf;
+        border-bottom: 1px solid #cfcfcf;
+
+        .content {
+          ul {
+            li {
+              float: left;
+
+              &:nth-child(1) {
+                width: 70px;
+              }
+
+              &:nth-child(2) {
+                width: 250px;
+                vertical-align: top;
+              }
+
+              &:nth-child(3) {
+                width: 230px;
+                color: #cfcfcf;
+              }
+
+              &:nth-child(4) {
+                width: 155px;
+              }
+
+              &:nth-child(5) {
+                width: 155px;
+
+                input {
+                  width: 40px;
+                  text-align: center;
+                  outline: none;
+
+                }
+
+                a {
+                  &:hover {
+                    color: #000000;
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              &:nth-child(6) {
+                width: 155px;
+                color: red;
+              }
+
+              &:nth-child(7) {
+                width: 150px;
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+    //底部商品价格栏
+    .J_carfooter {
+      position: relative;
+      height: 60px;
+      line-height: 60px;
+      padding: 3px;
+      font-size: 13px;
+      background-color: rgb(229, 229, 229);
+
+      ul {
+        height: 100%;
+
+        li {
+
+          float: left;
+          margin-right: 20px;
+
+          input {
+            margin: 0 7px;
+          }
+
+          &:nth-child(5) {
+            margin-left: 540px;
+          }
+
+          .number,
+          .totalPrice {
             display: inline-block;
-            width: 123px;
+            color: red;
+            font-size: 16px;
+            margin: 0 5px;
+          }
+
+          &:nth-child(7) {
+            float: right;
+            width: 140px;
             height: 100%;
-            text-align: center;
-            font-size: 18px;
-        }
-        }
-    }
-    .line{
-        position: relative;
-        height: 2px;
-        background-color: #cfcfcf;
-        .curren{
-            position: absolute;
-            width: 123px;
-            height: 100%;
-            left: 0;
-            background-color: red;
-            transition: all .7s;
-        }
-    }
-    .J_carMain{
-        //顶部商品介绍栏
-        .J_carBar{
-            height: 50px;
-            ul{
-                li{
-                    box-sizing: border-box;
-                    float: left;
-                    width: 155px;
-                    height: 100%;
-                    padding: 0 10px;
-                    font-size: 13px;
-                    line-height: 50px;
-                    input{
-                        margin: 0 7px;
-                    }
-                    &:nth-child(1){
-                        width: 100px;
-                    }
-                    &:nth-child(2){
-                        width: 470px;
-                    }
-                }
+            margin: 0;
+
+            a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              color: rgb(255, 255, 255);
+              font-size: 24px;
+              text-align: center;
+              background-color: #cfcfcf;
             }
+          }
         }
-        .J_carcontent{
-            .J_item{
-                height: 129px;
-                padding: 17px 15px;
-                box-sizing: border-box;
-                border-top: 1px solid #cfcfcf;
-                border-bottom: 1px solid #cfcfcf;
-                    .content{
-                        ul{
-                         li{
-                             float: left;
-                             &:nth-child(1){
-                                 width: 70px;
-                             }
-                             &:nth-child(2){
-                                width: 250px;
-                                vertical-align: top;
-                            }&:nth-child(3){
-                                width: 230px;
-                                color: #cfcfcf;
-                            }&:nth-child(4){
-                                width: 155px;
-                            }&:nth-child(5){
-                                width: 155px;
-                                input {
-                                    width: 40px;
-                                    text-align: center;
-                                    outline: none;
-                                    
-                                }a{
-                                &:hover{
-                                    color: #000000;
-                                    cursor: pointer;
-                                }
-                            }
-                            }&:nth-child(6){
-                                width: 155px;
-                                color: red;
-                            }&:nth-child(7){
-                                width: 150px;
-                            }
-                            
-                            }
-                        }
-                    }
-            }
-        }
-        //底部商品价格栏
-        .J_carfooter{
-            position: relative;
-            height: 60px;
-            line-height: 60px;
-            padding: 3px;
-            font-size: 13px;
-            background-color: rgb(229,229,229);
-            ul{
-                height: 100%;
-                li{
-                    
-                    float: left;
-                    margin-right: 20px;
-                    input{
-                        margin: 0 7px;
-                    }
-                    &:nth-child(5){
-                        margin-left: 540px;
-                    }
-                    .number,
-                    .totalPrice{
-                        display: inline-block;
-                        color: red;
-                        font-size: 16px;
-                        margin: 0 5px;
-                    }
-                   &:nth-child(7){
-                       float: right;
-                       width: 140px;
-                       height: 100%;
-                       margin: 0;
-                       
-                       a{
-                           display: inline-block;
-                           width: 100%;
-                           height: 100%;
-                           color: rgb(255, 255, 255);
-                           font-size: 24px;
-                           text-align: center;
-                            background-color: #cfcfcf;
-                       }
-                   }
-                }
-            }
-        }
+      }
     }
+  }
 }
-.current{
-    color: red;
+
+.current {
+  color: red;
 }
-.checked-item{
-    background-color: rgb(255,248,225);
+
+.checked-item {
+  background-color: rgb(255, 248, 225);
 }

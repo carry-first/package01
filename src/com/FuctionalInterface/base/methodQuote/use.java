@@ -1,9 +1,8 @@
 package com.FuctionalInterface.base.methodQuote;
 
-import java.awt.print.Printable;
 
 public class use {
-    public static void pr(Fuction2 p){
+    public static void pr(Fuction2 p) {
         p.pri("Hello World!");
     }
 

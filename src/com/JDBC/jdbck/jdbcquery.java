@@ -7,31 +7,32 @@ public class jdbcquery {
 //        调用查询数据jdbc
         queryData("select * from casetab");
     }
+
     //    表格查询方法
-    public static void queryData(String sql){
+    public static void queryData(String sql) {
         Connection connection = null;
         Statement statement = null;
         ResultSet resultset = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql:///task?&userSSL=false&serverTimezone=UTC","root","123456");
+            connection = DriverManager.getConnection("jdbc:mysql:///task?&userSSL=false&serverTimezone=UTC", "root", "123456");
             statement = connection.createStatement();
 //            获取query查询对象
-             resultset = statement.executeQuery(sql);
+            resultset = statement.executeQuery(sql);
 //              如果还有下一行
-            while (resultset.next()){
+            while (resultset.next()) {
 //              获取当前行的第一列
                 int anInt = resultset.getInt(1);
                 String name = resultset.getString("cc");
                 double salary = resultset.getDouble("salary");
-                System.out.println(anInt+"-----"+name+"------"+salary);
+                System.out.println(anInt + "-----" + name + "------" + salary);
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        }catch (SQLException throwables) {
+        } catch (SQLException throwables) {
             throwables.printStackTrace();
-        } finally{
-            if(resultset != null){
+        } finally {
+            if (resultset != null) {
                 try {
                     resultset.close();
                 } catch (SQLException throwables) {
@@ -39,7 +40,7 @@ public class jdbcquery {
                 }
             }
 
-            if(connection != null){
+            if (connection != null) {
                 try {
                     connection.close();
                 } catch (SQLException throwables) {
@@ -47,7 +48,7 @@ public class jdbcquery {
                 }
             }
 
-            if(statement != null){
+            if (statement != null) {
                 try {
                     statement.close();
                 } catch (SQLException throwables) {

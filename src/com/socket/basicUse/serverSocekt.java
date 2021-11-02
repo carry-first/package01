@@ -21,7 +21,7 @@ public class serverSocekt {
 //        接收到的有效数据
         int len = is.read(bytes);
 //        打印数据
-        System.out.println(new String(bytes,0,len));
+        System.out.println(new String(bytes, 0, len));
 //        返回给客户端数据,获取数据流
         OutputStream os = accept.getOutputStream();
 //        返回内容

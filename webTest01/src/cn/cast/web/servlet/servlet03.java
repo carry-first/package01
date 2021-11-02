@@ -15,7 +15,7 @@ import java.util.Set;
 public class servlet03 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost(req,resp);
+        this.doPost(req, resp);
     }
 
     @Override
@@ -29,13 +29,13 @@ public class servlet03 extends HttpServlet {
         Enumeration<String> parameterNames = req.getParameterNames();
 //        获取数据体中所有数据，第一个为键值（name参数），第二个为所有参数值（values）
         Map<String, String[]> parameterMap = req.getParameterMap();
-        System.out.println("paramter  name:"+name);
+        System.out.println("paramter  name:" + name);
         System.out.println("paramterValues------------------");
         for (int i = 0; i < hobbies.length; i++) {
             System.out.println(hobbies[i]);
         }
         System.out.println("paramterNames------------------");
-        while (parameterNames.hasMoreElements()){
+        while (parameterNames.hasMoreElements()) {
             System.out.println(parameterNames.nextElement());
         }
         System.out.println("paramterMap------------------");

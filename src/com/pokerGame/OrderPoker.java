@@ -9,23 +9,24 @@ public class OrderPoker {
     public static void main(String[] args) {
         play();
     }
-    public static void play(){
+
+    public static void play() {
 //        定义集合
         int index = 0;
         ArrayList<Integer> pokerIndex = new ArrayList<>();
 //        定义map集合
-        HashMap<Integer,String> poker = new HashMap<>();
+        HashMap<Integer, String> poker = new HashMap<>();
 //        定义花色
-        List<String> colors = List.of("♠","♥","♣","♦");
+        List<String> colors = List.of("♠", "♥", "♣", "♦");
 //        定义数字
-        List<String> numbers = List.of("2","A","K","Q","J","10","9","8","7","6","5","4","3");
+        List<String> numbers = List.of("2", "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3");
 //        添加大小王和指定的key
         pokerIndex.add(index);
-        poker.put(index,"大王");
+        poker.put(index, "大王");
         index++;
 //        小王
         pokerIndex.add(index);
-        poker.put(index,"大王");
+        poker.put(index, "大王");
         index++;
 //        循环添加牌
         for (String number : numbers) {
@@ -33,7 +34,7 @@ public class OrderPoker {
 //                添加索引值
                 pokerIndex.add(index);
 //                添加扑克牌
-                poker.put(index,color+number);
+                poker.put(index, color + number);
 //                索引值增加
                 index++;
             }
@@ -51,14 +52,14 @@ public class OrderPoker {
         for (int i = 0; i < pokerIndex.size(); i++) {
 //            取出当前打乱牌的扑克值
             int in = pokerIndex.get(i);
-            if(i>=51){
+            if (i >= 51) {
 //                将打乱的牌添加到底牌中
                 dipai.add(in);
-            }else if(i%3==0){
+            } else if (i % 3 == 0) {
                 play1.add(in);
-            }else if(i%3==1){
+            } else if (i % 3 == 1) {
                 play2.add(in);
-            }else if(i%3==2){
+            } else if (i % 3 == 2) {
                 play3.add(in);
             }
         }
@@ -67,15 +68,16 @@ public class OrderPoker {
         Collections.sort(play2);
         Collections.sort(play3);
 //        进行输出
-        showPoker("刘备",poker,play1);
-        showPoker("关羽",poker,play2);
-        showPoker("张飞",poker,play3);
-        showPoker("底牌",poker,dipai);
+        showPoker("刘备", poker, play1);
+        showPoker("关羽", poker, play2);
+        showPoker("张飞", poker, play3);
+        showPoker("底牌", poker, dipai);
     }
-    public static void showPoker(String name,HashMap poker,ArrayList<Integer> list){
-        System.out.print(name+":  ");
+
+    public static void showPoker(String name, HashMap poker, ArrayList<Integer> list) {
+        System.out.print(name + ":  ");
         for (Integer in : list) {
-            System.out.print(poker.get(in)+"   ");
+            System.out.print(poker.get(in) + "   ");
         }
         System.out.println();
     }

@@ -18,20 +18,20 @@ public class DruidImpl {
 //            获取sql执行对象
             pstm = conn.prepareStatement(sql);
 //            设置？的值
-            pstm.setString(1,"田七");
-            pstm.setDouble(2,4589);
+            pstm.setString(1, "田七");
+            pstm.setDouble(2, 4589);
             int i = pstm.executeUpdate();
-            if(i>0){
-                System.out.println(i+"sql执行成功");
-            }else{
-                System.out.println(i+"sql执行失败");
+            if (i > 0) {
+                System.out.println(i + "sql执行成功");
+            } else {
+                System.out.println(i + "sql执行失败");
             }
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        }finally{
+        } finally {
 //            返回连接对象
-            JDBCuitlDruid.close(conn,pstm);
+            JDBCuitlDruid.close(conn, pstm);
         }
     }
 }

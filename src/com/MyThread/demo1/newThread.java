@@ -17,7 +17,8 @@ public class newThread extends JFrame {
         newThread t = new newThread();
         t.setVisible(true);
     }
-    public newThread(){
+
+    public newThread() {
         JLabel jl1 = new JLabel("账号：");
         JTextField jtf1 = new JTextField(10);
 
@@ -41,7 +42,7 @@ public class newThread extends JFrame {
             public void windowIconified(WindowEvent e) {
 //                super.windowIconified(e);
                 System.out.println("jjklfja");
-                JOptionPane.showMessageDialog(null,"缩小我干嘛再给你一个窗格","哼哼",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "缩小我干嘛再给你一个窗格", "哼哼", JOptionPane.ERROR_MESSAGE);
 //                System.out.println(e);
                 Pan p = new Pan();
 
@@ -63,7 +64,7 @@ public class newThread extends JFrame {
 //        设置窗体的显示风格
 //        getRootPane().setWindowDecorationStyle(JRootPane.INFORMATION_DIALOG);
         setIgnoreRepaint(false);
-        setBounds(600,300,320,100);
+        setBounds(600, 300, 320, 100);
 //        设置标题栏不可用
 //        setEnabled(false);
 //        设置窗口不可操作内容状态
@@ -71,12 +72,13 @@ public class newThread extends JFrame {
 
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
     }
-//          设置点击关闭时弹框
-    public static WindowAdapter getWin(){
-        return new WindowAdapter(){
+
+    //          设置点击关闭时弹框
+    public static WindowAdapter getWin() {
+        return new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                JOptionPane.showMessageDialog(null,"你关不掉我","关闭",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "你关不掉我", "关闭", JOptionPane.ERROR_MESSAGE);
             }
         };
     }

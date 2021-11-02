@@ -24,16 +24,16 @@ public class jdbcinsert01 {
             statement = connection.createStatement();
 //            执行sql云居
             int i = statement.executeUpdate(s);
-            if(i > 0){
+            if (i > 0) {
                 System.out.println("sql执行成功");
-            }else{
+            } else {
                 System.out.println("sql执行失败");
             }
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         } finally {
 //            如果对象不为空
-            if(connection != null){
+            if (connection != null) {
                 try {
                     connection.close();
                 } catch (SQLException throwables) {
@@ -41,7 +41,7 @@ public class jdbcinsert01 {
                 }
             }
 //            如果对象不为空
-            if(statement != null){
+            if (statement != null) {
                 try {
                     statement.close();
                 } catch (SQLException throwables) {

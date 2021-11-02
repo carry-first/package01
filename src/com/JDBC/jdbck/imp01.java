@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class imp01 {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 //        导入驱动jar包
 //        注册驱动
         Class.forName("com.mysql.cj.jdbc.Driver");

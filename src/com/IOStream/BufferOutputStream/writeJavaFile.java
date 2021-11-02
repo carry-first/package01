@@ -3,7 +3,7 @@ package com.IOStream.BufferOutputStream;
 import java.io.*;
 
 public class writeJavaFile {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         show01();
         System.out.println("content");
     }

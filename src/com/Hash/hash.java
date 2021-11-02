@@ -21,7 +21,7 @@ public class hash {
         s.add(43);
         Iterator it = s.iterator();
         Iterator it1 = s1.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             System.out.println(it.next());
         }
     }

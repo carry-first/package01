@@ -17,7 +17,7 @@ public class servlet02 extends HttpServlet {
         BufferedReader reader = req.getReader();
         String len = null;
 //          循环读取数据
-        while ((len = reader.readLine()) !=null){
+        while ((len = reader.readLine()) != null) {
             System.out.println(len);
         }
         reader.close();

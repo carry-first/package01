@@ -6,12 +6,12 @@ public class demo1 {
         Object obj = new Object();
 
 //        创建客户1
-        new Thread(){
+        new Thread() {
             @Override
             public void run() {
-                while (true){
+                while (true) {
                     //                调用同步锁
-                    synchronized (obj){
+                    synchronized (obj) {
                         System.out.println("顾客1，老板做几个包子");
 //                    无限等待中
                         try {
@@ -29,12 +29,12 @@ public class demo1 {
         }.start();
 
         //        创建客户2
-        new Thread(){
+        new Thread() {
             @Override
             public void run() {
-                while (true){
+                while (true) {
                     //                调用同步锁
-                    synchronized (obj){
+                    synchronized (obj) {
                         System.out.println("顾客2，老板做几个包子");
 //                    无限等待中
                         try {
@@ -51,10 +51,10 @@ public class demo1 {
             }
         }.start();
 //        老板线程
-        new Thread(){
+        new Thread() {
             @Override
             public void run() {
-                while(true){
+                while (true) {
                     //                老板类做包子
 //                线程睡眠，5秒后做好一组包子
                     try {
@@ -64,7 +64,7 @@ public class demo1 {
                     }
 //                确保线程的同步，等待和唤醒的操作只有一个
 //                包子做好了唤醒obj同步锁对象，可以继续执行同步锁后的任务
-                    synchronized (obj){
+                    synchronized (obj) {
                         System.out.println("包子已经做好了");
 //                    唤醒obj类等待的所有类
                         obj.notifyAll();

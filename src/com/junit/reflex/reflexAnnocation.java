@@ -19,16 +19,16 @@ public class reflexAnnocation {
         System.out.println("方法的注解");
         Method[] methods = personClass.getDeclaredMethods();
         for (Method method : methods) {
-            System.out.print(method.getName()+"\t");
+            System.out.print(method.getName() + "\t");
             Annotation[] annotations1 = method.getAnnotations();
             for (Annotation annotation : annotations1) {
-                System.out.print(annotation+"\t");
+                System.out.print(annotation + "\t");
             }
-            System.out.print("权限修饰符："+Modifier.toString(method.getModifiers())+"\t");
+            System.out.print("权限修饰符：" + Modifier.toString(method.getModifiers()) + "\t");
             System.out.println(method.getReturnType());
             Class<?>[] parameterTypes = method.getParameterTypes();
             for (Class<?> parameterType : parameterTypes) {
-                System.out.print(parameterType+"\t");
+                System.out.print(parameterType + "\t");
             }
         }
     }

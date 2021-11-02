@@ -7,11 +7,11 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class UserDao {
-//    获取数据库连接模板
+    //    获取数据库连接模板
     JdbcTemplate template = new JdbcTemplate(JDBCutils.getDataSource());
 
-//    定义查询方法
-    public User login(User loginUser){
+    //    定义查询方法
+    public User login(User loginUser) {
         try {
 //        定义sql
             String sql = "select * from users where name = ? and password = ?";

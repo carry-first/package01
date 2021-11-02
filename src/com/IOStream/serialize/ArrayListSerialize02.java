@@ -7,7 +7,8 @@ public class ArrayListSerialize02 {
     public static void main(String[] args) {
 
     }
-    private static void saveArraylist() throws IOException,ClassNotFoundException {
+
+    private static void saveArraylist() throws IOException, ClassNotFoundException {
 //        创建输出反序列流
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Tang A Biao\\IdeaProjects\\package1\\src\\com\\IOStream\\serialize\\ObjArr.txt"));
 //        创建读取反序列流

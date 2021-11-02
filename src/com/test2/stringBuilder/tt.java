@@ -14,8 +14,8 @@ import java.util.List;
 public class tt {
     public static void main(String[] args) {
         /*
-        *ji
-        */
+         *ji
+         */
 //        private int k = 10;
         System.out.printf("jio");
         List<String> list = new ArrayList();
@@ -26,16 +26,18 @@ public class tt {
         list.add("e");
         Collections.reverse(list);
         System.out.println(list);
-        int arr[] = {12,43,54,12,74,77,22,94};
+        int arr[] = {12, 43, 54, 12, 74, 77, 22, 94};
     }
-    public void method01(){
+
+    public void method01() {
         int a = 10;
 
     }
 }
-class Person{
+
+class Person {
     /*
-    *jj
-    */
+     *jj
+     */
     private int j;
 }

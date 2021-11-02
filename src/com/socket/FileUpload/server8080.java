@@ -10,10 +10,10 @@ public class server8080 {
         ServerSocket sst = new ServerSocket(8080);
         Socket socket = sst.accept();
         InputStream is = socket.getInputStream();
-        byte bytes [] = new byte[1024];
-        int len ;
-        while((len = is.read(bytes))!=-1){
-            System.out.println(new String(bytes,0,len));
+        byte bytes[] = new byte[1024];
+        int len;
+        while ((len = is.read(bytes)) != -1) {
+            System.out.println(new String(bytes, 0, len));
         }
     }
 }

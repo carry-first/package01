@@ -3,7 +3,7 @@ package com.annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-@pro(className = "com.annotation.Student",methodName = "dance")
+@pro(className = "com.annotation.Student", methodName = "dance")
 public class implFrame {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
         Class<implFrame> implFrameClass = implFrame.class;

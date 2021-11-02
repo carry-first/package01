@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 
 public class write {
     public static void main(String[] args) throws IOException {
-        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("C:\\Users\\Tang A Biao\\IdeaProjects\\package1\\src\\com\\IOStream\\OutStreamWriter\\d.txt"),"GBK");
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("C:\\Users\\Tang A Biao\\IdeaProjects\\package1\\src\\com\\IOStream\\OutStreamWriter\\d.txt"), "GBK");
 
         osw.write("你好");
 

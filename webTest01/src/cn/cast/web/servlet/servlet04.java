@@ -14,7 +14,7 @@ import java.util.Set;
 public class servlet04 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost(req,resp);
+        this.doPost(req, resp);
     }
 
     @Override

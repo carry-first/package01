@@ -14,7 +14,7 @@ public class Druid01 {
     }
 
     private static void use() {
-        InputStream is =null;
+        InputStream is = null;
         try {
             Properties pro = new Properties();
             is = Druid01.class.getClassLoader().getResourceAsStream("druid.properties");
@@ -31,7 +31,7 @@ public class Druid01 {
             e.printStackTrace();
         } finally {
             try {
-                if(is != null) is.close();
+                if (is != null) is.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

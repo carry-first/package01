@@ -11,11 +11,12 @@ public class th01 {
     }
 
 }
-class Myth extends Thread{
+
+class Myth extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 20; i++) {
-            System.out.println("i="+i);
+            System.out.println("i=" + i);
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {

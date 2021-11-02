@@ -1,6 +1,6 @@
 package com.MyThread.demo1.eatBaozi;
 
-public class chihuo extends Thread{
+public class chihuo extends Thread {
     private Baozi baozi;
 
     public chihuo(Baozi baozi) {
@@ -10,13 +10,13 @@ public class chihuo extends Thread{
     @Override
     public void run() {
 //        一直吃包子
-        while (true){
+        while (true) {
             //       使用同步技术保证包子生产和吃货吃包子只有一个在执行
-            synchronized (baozi){
+            synchronized (baozi) {
 //        判断是否有包子
-                if(baozi.flag){
+                if (baozi.flag) {
 //            有包子就吃包子1秒吃包子的时间
-                    System.out.println("吃货正在吃："+baozi.pi+baozi.xian+"味的包子");
+                    System.out.println("吃货正在吃：" + baozi.pi + baozi.xian + "味的包子");
                     try {
                         Thread.sleep(2000);
                     } catch (InterruptedException e) {

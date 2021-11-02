@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class readLine {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         show01();
     }
 

@@ -7,10 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
-  i让我就就佛教啊
-  </body>
+</head>
+<body>
+i让我就就佛教啊
+</body>
 </html>

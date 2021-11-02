@@ -1,6 +1,6 @@
 package com.test2.stringBuilder.Generic;
 
-public class implementsGeneric1 implements GenericInterface<String>{
+public class implementsGeneric1 implements GenericInterface<String> {
 
     @Override
     public void method(String s) {

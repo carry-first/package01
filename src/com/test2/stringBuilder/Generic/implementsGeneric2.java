@@ -1,9 +1,9 @@
 package com.test2.stringBuilder.Generic;
 
-public class implementsGeneric2<e> implements GenericInterface<e>{
+public class implementsGeneric2<e> implements GenericInterface<e> {
     @Override
     public void method(e s) {
-        System.out.println("第二种方法："+s);
+        System.out.println("第二种方法：" + s);
     }
 
     @Override

@@ -42,6 +42,7 @@ public class Person {
                 ", age=" + age +
                 '}';
     }
+
     @MyAnnocation("public method getName")
     public String getName() {
         return name;
@@ -60,11 +61,12 @@ public class Person {
     }
 
     @MyAnnocation("private method")
-    private int getAge01(){
+    private int getAge01() {
         return age;
     }
+
     @MyAnnocation("method002")
-    public String Method002(String name, int age){
+    public String Method002(String name, int age) {
         return "hello kkk";
     }
 }

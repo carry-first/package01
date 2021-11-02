@@ -20,9 +20,9 @@ public class ArrayList1 {
 //        intArray.add(53);
 //        System.out.println(intArray);
         ArrayList<student2> stuArray = new ArrayList<>();
-        student2 one = new student2("洪七公",123);
-        student2 two = new student2("黄小邪",433);
-        student2 three = new student2("段誉",653);
+        student2 one = new student2("洪七公", 123);
+        student2 two = new student2("黄小邪", 433);
+        student2 three = new student2("段誉", 653);
         stuArray.add(one);
         stuArray.add(two);
         stuArray.add(three);
@@ -32,7 +32,8 @@ public class ArrayList1 {
         }
     }
 }
-class student2{
+
+class student2 {
     private String name;
     private int age;
 

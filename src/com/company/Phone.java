@@ -1,9 +1,10 @@
 package com.company;
 
 public class Phone {
-    String name ="手机";
+    String name = "手机";
     private String type = "xiaomi";
-    public void call(){
+
+    public void call() {
         System.out.println("我会打电话");
     }
 

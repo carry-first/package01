@@ -4,14 +4,20 @@ package com.annotation;
 @SuppressWarnings("all")
 public class SupperssWarnings {
     private String s;
-//    已过时注解
+
+    //    已过时注解
     @Deprecated
-    public void show01(){
+    public void show01() {
         System.out.println("jkl");
-    };
+    }
+
+    ;
 
     @MyAnno("all")
-    public void show02(){};
+    public void show02() {
+    }
+
+    ;
 
     @Override
     public String toString() {

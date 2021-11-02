@@ -10,7 +10,7 @@ public class demo1 {
         Integer in3 = Integer.valueOf(22);
         System.out.println(in3);
         Integer in4 = new Integer(12);
-        System.out.println(in4+4);
+        System.out.println(in4 + 4);
         int num = Integer.parseInt("23");
         System.out.println(num);
     }
